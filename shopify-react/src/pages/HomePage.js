@@ -2,14 +2,15 @@ import React, { useContext, useEffect } from "react";
 import { ShopContext } from "../context/shopContext";
 
 const HomePage = () => {
-  const { test } = useContext(ShopContext);
+  const { fetchAllProducts, products } = useContext(ShopContext);
 
-  return (
-    <div>
-      Home
-      {test}
-    </div>
-  );
+  useEffect(() => {
+    fetchAllProducts();
+    return () => {};
+  }, [fetchAllProducts]);
+
+  if (!products) return <div>loading</div>;
+  return <div>We have products!</div>;
 };
 
 export default HomePage;

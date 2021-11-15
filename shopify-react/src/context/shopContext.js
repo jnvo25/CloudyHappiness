@@ -19,9 +19,7 @@ class ShopProvider extends Component {
   };
 
   componentDidMount() {
-    console.log("STOREFRONT TOKEN:", process.env.REACT_APP_STOREFRONT_TOKEN);
     this.createCheckout();
-    this.fetchAllProducts();
   }
 
   // Create checkout
@@ -96,7 +94,17 @@ class ShopProvider extends Component {
 
   render() {
     return (
-      <ShopContext.Provider value={{ ...this.state }}>
+      <ShopContext.Provider
+        value={{
+          ...this.state,
+          fetchAllProducts: this.fetchAllProducts,
+          fetchProductWithId: this.fetchProductWithId,
+          addItemToCart: this.addItemToCart,
+          updateItemToCart: this.updateItemToCart,
+          openCart: this.openCart,
+          closeCart: this.closeCart,
+        }}
+      >
         {this.props.children}
       </ShopContext.Provider>
     );
@@ -106,5 +114,4 @@ class ShopProvider extends Component {
 const ShopConsumer = ShopContext.Consumer;
 
 export { ShopConsumer, ShopContext };
-
 export default ShopProvider;
