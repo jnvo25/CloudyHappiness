@@ -32,7 +32,7 @@ class ShopProvider extends Component {
 
   // Adding Line Items.
   // NOTE: variantId is the productId
-  addItemToCart = async (variantId, quantity) => {
+  addItemToCheckout = async (variantId, quantity) => {
     const lineItemsToAdd = [
       {
         variantId,
@@ -45,8 +45,9 @@ class ShopProvider extends Component {
       this.state.checkout.id,
       lineItemsToAdd
     );
-
+      
     this.setState({ checkout: checkout });
+    this.openCart();
   };
 
   // Updating Line Items. Update the quantity of the shopping cart.
@@ -99,7 +100,7 @@ class ShopProvider extends Component {
           ...this.state,
           fetchAllProducts: this.fetchAllProducts,
           fetchProductWithId: this.fetchProductWithId,
-          addItemToCart: this.addItemToCart,
+          addItemToCheckout: this.addItemToCheckout,
           updateItemToCart: this.updateItemToCart,
           openCart: this.openCart,
           closeCart: this.closeCart,

@@ -7,6 +7,7 @@ import ShopProvider from "../context/shopContext";
 import HomePage from "../pages/HomePage";
 import ProductPage from "../pages/ProductPage";
 import Navbar from "../components/Navbar";
+import Cart from "../components/Cart";
 
 const debug =
   process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -18,14 +19,8 @@ function App() {
     <ShopProvider>
       <StyletronProvider value={engine} debug={debug} debugAfterHydration>
         <BrowserRouter>
-          <ul>
-            <li>
-              <Link to="/">Cloudy Happiness</Link>
-            </li>
-            <li>
-              <Link to="/cart">Cart</Link>
-            </li>
-          </ul>
+          <Navbar />
+          <Cart />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/product/:id" element={<ProductPage />} />
