@@ -3,10 +3,10 @@
 1. git clone github repo
 2. Run the following command
    ```
-   cd client
+   cd shopify-react
    npm install
    ```
-3. Create file '**.env**' within **client** folder.
+3. Create file '**.env**' within **shopify-react** folder. Don't forget "." in the front!
 4. Paste the following code in '**.env**' file:
    ```
    REACT_APP_STOREFRONT_TOKEN='ASK_SECRET_TOKEN_FROM_FAUSTINA_OR_JONATHAN'
@@ -16,4 +16,7 @@
 
 # Run react server on localhost
 
-1. yarn start
+```
+1. cd shopify-react
+2. yarn start
+```
