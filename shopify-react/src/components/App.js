@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ShopProvider from "../context/shopContext";
 import HomePage from "../pages/HomePage";
 import ProductPage from "../pages/ProductPage";
+import Navbar from "../components/Navbar";
 
 const debug =
   process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
