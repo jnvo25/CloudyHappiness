@@ -4,7 +4,7 @@ import { Client as Styletron } from "styletron-engine-atomic";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import ShopProvider from "../context/shopContext";
-import HomePage from "../pages/HomePage";
+import HomePage from "../components/Homepage/Homepage";
 import ProductPage from "../pages/ProductPage";
 import Navbar from "../components/Navbar/Navbar";
 import Cart from "../components/Cart";
