@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ShopProvider from "../context/shopContext";
 import HomePage from "../pages/HomePage";
 import ProductPage from "../pages/ProductPage";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Cart from "../components/Cart";
 
 const debug =
