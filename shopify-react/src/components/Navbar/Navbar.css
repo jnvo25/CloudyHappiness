@@ -1,0 +1,25 @@
+.brand {
+    /* // TODO: Make center */
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; */
+    width: 100px;
+    
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+/* // TODO: Adjust sizing */
+
+.fas { 
+    font-size: 23px;
+}
+
+.navbar > .nav-link {
+    padding: 0.5rem 0.2rem;
+    color: black;
+    left: 80%;
+}
