@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+#directory{
+    /* temporary color until image is added */
+    background-color: lightblue;
+    font-family: 'Shrikhand', cursive;
+}
+
+/* Nav buttons for each */
+#shopNav{
+    display: inline;
+    width:8%
+}
+
+#shopBtn{
+    height: 100%;
+    width: 10%;
+    border-radius: 100%;
+    background-color: #cae8ff;
+    border: none;
+}
+
+#faqNav{
+    display: inline;
+    width:8%
+}
+
+#faqBtn{
+    height: 100%;
+    width: 10%;
+    border-radius: 100%;
+    background-color: #d6e9b9;
+    border: none;
+}
+
+#contactNav{
+    display: inline;
+    width:8%
+}
+
+#contactBtn{
+    height: 100%;
+    width: 10%;
+    border-radius: 100%;
+    background-color: #f8c9dc;
+    border: none;
+}
+
+.linkText{
+    display:block;
+	float:left;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:.10em;
+    
+	text-align:center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+
+.linkText:hover{
+    color: black;
+}
