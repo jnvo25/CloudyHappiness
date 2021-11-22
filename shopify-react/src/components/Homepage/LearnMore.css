@@ -1,0 +1,70 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+.bottom-right{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+#face{
+    max-width: 7.5rem;
+    height: 6rem;
+    right: -3.3rem;
+    top: .5rem;
+}
+
+#cloudleft{
+    position: absolute;
+    left: 0%;
+    top: -2%;
+    object-fit: contain;
+}
+
+#cloudright{
+    position: absolute;
+    right: 0%;
+    top: -35%;
+    object-fit: contain;
+
+}
+
+#frame{
+    display: block;
+    position: relative;
+    background-color: #D6E9B9;
+    border-top: .2rem solid black;
+    border-bottom: .2rem solid black;
+    border-color: #7A9A47;
+    padding: 3rem 2.5rem;
+    overflow: hidden;
+}
+
+#learn{
+    font-family: 'Shrikhand', cursive;
+    background-color: #D6E9B9;
+    color:#7A9A47;
+    border: .2rem solid black;
+    border-color: #7A9A47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1.3rem 1.3rem;
+    width: 50%;
+    max-height: auto;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+#learn:hover{
+    border-color: #4C6A1C;
+    box-shadow: 0 0.5rem 0.5rem -.04rem #7A9A47;
+    transform: translateY(-0.25rem)
+
+}
+
