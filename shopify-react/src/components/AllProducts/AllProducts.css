@@ -1,0 +1,15 @@
+body {
+    background-color: #CAE8FF !important;
+    
+}
+
+#products {
+    background-color: #FFFFFF;
+    width: 90%;
+    padding-top: 10px;
+}
+
+
+.product-card {
+    background-color: #E8E8E8;
+}
