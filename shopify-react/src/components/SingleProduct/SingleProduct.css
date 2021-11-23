@@ -1,0 +1,10 @@
+body {
+    color: #89A9C3 !important;
+}
+
+.white-button {
+    border-style: solid !important;
+    border-color: #89A9C3 !important;
+    background-color: white !important;
+    color: #89A9C3 !important;
+}

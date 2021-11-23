@@ -17,7 +17,7 @@ const HomePage = () => {
 
   if (!products) return <div>Loading</div>;
   return (
-    <Container id="products">
+    <Container className="rounded" id="products">
       <Row>
         {products.map((product) => (
           <Col key={product.id} xs={6}>
