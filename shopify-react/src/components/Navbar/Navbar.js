@@ -17,12 +17,11 @@ const MyNav = () => {
           <img className="brand mx-auto" src={"https://i.ibb.co/B6T1b2n/Cloudy-Happiness-5.png"} alt="Cloudy Happiness" />
         </Link>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Link to="/">
-            <Nav.Link>Home</Nav.Link>
-          </Link>
-          <Link to="/products">
-            <Nav.Link>Products</Nav.Link>
-          </Link>
+          
+          <Nav.Link><Link to="/">Home</Link></Nav.Link>
+          
+          <Nav.Link><Link to="/products">Products</Link></Nav.Link>
+          
           <Nav.Link>Resources</Nav.Link>
           {/* <Button className="mb-3 nav-button" variant="secondary" href="tel:818-993-1369"><i className="fas fa-phone-alt pr-1"/>Call Us</Button> */}
         </Navbar.Collapse>
