@@ -13,15 +13,21 @@ const MyNav = () => {
     <>
       <Navbar className="me-auto" collapseOnSelect sticky="top" variant="light" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <img className="brand mx-auto" src={"https://i.ibb.co/B6T1b2n/Cloudy-Happiness-5.png"} alt="Cloudy Happiness" />
+        <Link to="/">
+          <img className="brand mx-auto" src={"https://i.ibb.co/B6T1b2n/Cloudy-Happiness-5.png"} alt="Cloudy Happiness" />
+        </Link>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav.Link>Home</Nav.Link>
+          <Link to="/">
+            <Nav.Link>Home</Nav.Link>
+          </Link>
           <Nav.Link>About Us</Nav.Link>
           <Nav.Link>Resources</Nav.Link>
           {/* <Button className="mb-3 nav-button" variant="secondary" href="tel:818-993-1369"><i className="fas fa-phone-alt pr-1"/>Call Us</Button> */}
         </Navbar.Collapse>
         <Nav.Link class="nav-icons ms-auto"><i class="fas fa-user"></i></Nav.Link>
-        <Nav.Link class="nav-icons ms-auto"><i class="fas fa-shopping-cart"></i></Nav.Link>
+        <Anchor onClick={() => openCart()}>
+          <Nav.Link class="nav-icons ms-auto"><i class="fas fa-shopping-cart"></i></Nav.Link>
+        </Anchor>
       </Navbar>
       
     </>
