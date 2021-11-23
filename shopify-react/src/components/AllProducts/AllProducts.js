@@ -4,6 +4,8 @@ import { ShopContext } from "../../context/shopContext";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
+import "./AllProducts.css"
+
 const HomePage = () => {
   const { fetchAllProducts, products } = useContext(ShopContext);
 
@@ -16,22 +18,22 @@ const HomePage = () => {
 
   if (!products) return <div>Loading</div>;
   return (
-    <Container>
+    <Container id="products">
       <Row>
         {products.map((product) => (
-        <Link
-            to={`/product/${product.id}`}
-            style={{ textDecoration: "none" }}
-        >
-          <Col key={product.id} xs={12}>
-            <Card>
-                <Card.Img variant="top" src={product.images[0].src} />
+          <Col key={product.id} xs={6}>
+            <Link
+                to={`/product/${product.id}`}
+                style={{ textDecoration: "none" }}
+            >
+            <Card className="product-card mb-4 text-center border-0">
+                <Card.Img className="product-images" variant="top" src={product.images[0].src} />
                 <Card.Body>
-                    <Card.Title style={{ fontSize: '17px' }}>{product.title}</Card.Title>
+                    <Card.Title style={{ fontSize: '15px', fontFamily: 'Shrikhand' }}>{product.title}</Card.Title>
                 </Card.Body>
             </Card>
+            </Link>
           </Col>
-        </Link>
         ))}
       </Row>
     </Container>

@@ -4,8 +4,6 @@ import MyCarousel from './MyCarousel';
 import Footer from './Footer';
 
 
-import './Homepage';
-
 function Homepage() {
   return (
     <div>
