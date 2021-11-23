@@ -20,7 +20,9 @@ const MyNav = () => {
           <Link to="/">
             <Nav.Link>Home</Nav.Link>
           </Link>
-          <Nav.Link>About Us</Nav.Link>
+          <Link to="/products">
+            <Nav.Link>Products</Nav.Link>
+          </Link>
           <Nav.Link>Resources</Nav.Link>
           {/* <Button className="mb-3 nav-button" variant="secondary" href="tel:818-993-1369"><i className="fas fa-phone-alt pr-1"/>Call Us</Button> */}
         </Navbar.Collapse>
