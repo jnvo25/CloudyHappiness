@@ -12,14 +12,12 @@
     border: none;
 }
 
-/* // TODO: Adjust sizing */
-
 .fas { 
     font-size: 23px;
+    color: black;
 }
 
-.navbar > .nav-link {
-    padding: 0.5rem 0.2rem;
-    color: black;
-    left: 80%;
+a .nav-link {
+    padding: 0.5rem 0.5rem !important;
+    color: black !important;
 }
