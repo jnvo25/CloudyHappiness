@@ -8,6 +8,7 @@ function Homepage() {
     <div>
         <LearnMore />
         <PageDirectory />
+        <p> </p>
         <MyCarousel />
         <Footer />
     </div>

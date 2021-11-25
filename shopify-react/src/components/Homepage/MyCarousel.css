@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+div#mycarouseldiv
+{
+    background-image: url("https://i.ibb.co/HV98jfb/Section-Clouds.png");
+    background-size: cover;
+}
+
+.chcTitle
+{
+    font-family: 'Shrikhand', cursive;
+    text-align:center;
+    font-size: 2.0em;
+    color: #89a9c3;
+}
+
+.carousel {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+  }
+
+
+.slideImage{
+    border: 5px solid #89a9c3;
+    width: 100%;
+    height: 600px;
+    max-height: 600px;
+}
+
+a#discordLink
+{
+    text-decoration: none; 
+}
+
+#joinClub
+{
+    font-family: 'Shrikhand', cursive;
+    background-color: white;
+    color:#89a9c3;
+    border: .2rem solid black;
+    border-color: #89a9c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1.3rem 1.3rem;
+    width: 50%;
+    max-height: auto;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+#joinClub:hover{
+    border-color: #89a9c3;
+    box-shadow: 0 0.5rem 0.5rem -.04rem #89a9c3;
+    transform: translateY(-0.25rem)
+}
+
