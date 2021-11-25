@@ -1,26 +1,32 @@
+import { Container, Row, Col } from "react-bootstrap";
 import './PageDirectory.css';
 function PageDirectory() {
     return (
         // Place your implementation between these divs
-        <div id="directory">
-            <div id="shopNav" >
-                <button id="shopBtn">
-                    <a href="" class="linkText">Shop</a>
-                </button>
-            </div>
+        <Container fluid id="directory">
+            <Row>
+                <Col id="shopNav">
+                    <img id='shopCloud' className="clouds" src="https://cdn.discordapp.com/attachments/400879855790718976/913563253853003796/Cloud_Blue.png" />
+                    <button id="shopBtn">
+                        <a href="" class="linkText">SHOP</a>
+                    </button>
+                </Col>
 
-            <div id="faqNav" >
-                <button id="faqBtn">
-                    <a href="" class="linkText">FAQ</a>
-                </button>
-            </div>
+                <Col id="faqNav">
+                    <img id='faqCloud' className="clouds" src="https://cdn.discordapp.com/attachments/400879855790718976/913563254167593020/Cloudy_Happiness_Green.png" />
+                    <button id="faqBtn">
+                        <a href="" class="linkText">FAQ</a>
+                    </button>
+                </Col>
 
-            <div id="contactNav" >
-                <button id="contactBtn">
-                    <a href="" class="linkText">Contact</a>
-                </button>
-            </div>
-        </div>
+                <Col id="contactNav">
+                    <img id='contactCloud' className="clouds" src="https://cdn.discordapp.com/attachments/400879855790718976/913563254620565534/Cloudy_Happiness_Pink.png" />
+                    <button id="contactBtn">
+                        <a href="" class="linkText">CONTACT</a>
+                    </button>
+                </Col>
+            </Row>
+        </Container>
     );
 }
 
