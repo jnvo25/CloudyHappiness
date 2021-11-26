@@ -15,7 +15,7 @@ const MyNav = () => {
   useEffect(() => {
       let listener = document.addEventListener("scroll", e => {
           var scrolled = document.scrollingElement.scrollTop
-          if (scrolled >= 50) {
+          if (scrolled >= 150) {
               if(scrollState !== "#FFFFFF") {
                   setScrollState("#FFFFFF")
               }
@@ -31,8 +31,8 @@ const MyNav = () => {
   }, [scrollState])
 
   return (
-    <Navbar collapseOnSelect onToggle={(e) => {if(e) setScrollState("#FFFFFF")}} style={{backgroundColor: scrollState}} className="justify-content-around" fixed="top" variant="light" expand="lg">
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar expanded={expanded} onToggle={(e) => {if(e) setScrollState("#FFFFFF")}} style={{backgroundColor: scrollState}} className="justify-content-around" fixed="top" variant="light" expand="lg">
+      <Navbar.Toggle onClick={()=> {setExpanded(expanded ? false : "expanded")}} aria-controls="basic-navbar-nav" />
       <Link to="/">
         <img className="brand" src={"https://i.ibb.co/B6T1b2n/Cloudy-Happiness-5.png"} alt="Cloudy Happiness" />
       </Link>
@@ -44,9 +44,9 @@ const MyNav = () => {
       </div>
       <Navbar.Collapse id="basic-navbar-nav">
         
-        <Nav.Link><Link to="/">Home</Link></Nav.Link>
+        <Nav.Link><Link onClick={()=> {setExpanded(expanded ? false : "expanded")}} to="/">Home</Link></Nav.Link>
         
-        <Nav.Link><Link to="/products">Products</Link></Nav.Link>
+        <Nav.Link><Link onClick={()=> {setExpanded(expanded ? false : "expanded")}} to="/products">Products</Link></Nav.Link>
         
         <Nav.Link>Resources</Nav.Link>
       </Navbar.Collapse>
