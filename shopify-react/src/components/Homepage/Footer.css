@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+#foot{
+    border-top: .2rem solid #89A9C3;
+    font-family: 'Shrikhand', cursive;
+    color: black;
+    padding-top: 12%;
+    background-image: url("https://cdn.discordapp.com/attachments/714892213955592297/913186458981003264/unknown.png");
+    background-color: #CAE8FF;
+    background-position-x: -60rem;
+    background-position-y: -15rem;
+    font-size: 1rem;
+}
+
+#tags{
+    color: black;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-wrap: wrap;
+}
+
+.foottag{
+    color: black;
+    font-size: 1rem;
+    font-family: 'Shrikhand', cursive;
+    text-decoration: none;
+    transition: all .25s;
+}
+
+.foottag:hover{
+    color: black;
+    transform: translateY(-0.25rem)
+}
+
+#emailList{
+    font-family: 'Shrikhand', cursive;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+
+#joinhead{
+    padding-top: 2%;
+}
+
+#inputBox{
+    border: .1rem solid black;
+}
+
+#join{
+    background-color: #D6E9B9;
+    border: .1rem solid #7A9A47;
+}
+
+#socials{
+    font-size: 1rem;
+    font-family: 'Shrikhand', cursive;
+    color: black;
+    margin-left: 6%;
+}
+
+#company{
+    margin-left: 2%;
+}
+
+.sociallink{
+    height: 5rem;
+    width: 5rem;
+}
+
+#sig{
+    font-size: 1rem;
+    font-family: 'Shrikhand', cursive;
+    color: black;
+    position: absolute;
+    bottom: -40;
+    right: 0;
+    margin-right: 3%;
+}
+
+#company{
+    padding-top: 5%;
+}
+
+#cornerLogo{
+    display:inline-block;
+    margin: 10px;
+}
