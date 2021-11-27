@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+div#cloud_title
+{
+    background-image: url("https://i.ibb.co/HV98jfb/Section-Clouds.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chcTitle
+{
+    font-family: 'Shrikhand', cursive;
+    text-align:center;
+    font-size: 2.0em;
+    color: #89a9c3;
+}
