@@ -36,20 +36,21 @@ const MyNav = () => {
       <Link to="/">
         <img className="brand" src={"https://i.ibb.co/B6T1b2n/Cloudy-Happiness-5.png"} alt="Cloudy Happiness" />
       </Link>
+      
+      <div style={{display: "flex", width: "50px", justifyContent: "flex-end"}}>
+        {/* <Nav.Link class="nav-icons ms-auto"><i class="fas fa-user"></i></Nav.Link> */}
+        <Anchor onClick={() => openCart()}>
+          <Nav.Link class="nav-icons ms-auto"><i class="fas fa-shopping-cart"></i></Nav.Link>
+        </Anchor>
+      </div>
       <Navbar.Collapse id="basic-navbar-nav">
-        
+      
         <Nav.Link><Link to="/">Home</Link></Nav.Link>
         
         <Nav.Link><Link to="/products">Products</Link></Nav.Link>
         
         <Nav.Link>Resources</Nav.Link>
       </Navbar.Collapse>
-      <div style={{display: "flex", width: "50px", justifyContent: "flex-end"}}>
-        <Nav.Link class="nav-icons ms-auto"><i class="fas fa-user"></i></Nav.Link>
-        <Anchor onClick={() => openCart()}>
-          <Nav.Link class="nav-icons ms-auto"><i class="fas fa-shopping-cart"></i></Nav.Link>
-        </Anchor>
-      </div>
     </Navbar>
   )
 }
