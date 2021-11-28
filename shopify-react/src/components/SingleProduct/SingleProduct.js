@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { ShopContext } from "../../context/shopContext";
 import ProductImage from "./ProductImage";
 
+import CloudyNav from "../Template/CloudyNav";
 import './SingleProduct.css';
 
 const ProductPage = () => {
@@ -27,6 +28,8 @@ const ProductPage = () => {
 
   if (!product.title) return <div>Loading</div>;
   return (
+    <>
+      <CloudyNav />
       <Container style={{fontFamily: 'Shrikhand'}}>
           <ProductImage images={product.images} />
           <Row className="pt-5">
@@ -67,6 +70,7 @@ const ProductPage = () => {
               </Col>
           </Row>
       </Container>
+    </>
   );
 };
 
