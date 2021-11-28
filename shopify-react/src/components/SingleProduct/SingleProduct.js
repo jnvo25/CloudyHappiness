@@ -11,13 +11,7 @@ import { useParams } from "react-router-dom";
 import { ShopContext } from "../../context/shopContext";
 import ProductImage from "./ProductImage";
 
-<<<<<<< HEAD
 import "./SingleProduct.css";
-=======
-import './SingleProduct.css';
-import CloudyNav from '../Template/CloudyNav';
-
->>>>>>> 9cb88dd7dce7e06919d5a58617b47c5719d6d44f
 
 const ProductPage = () => {
   let { id } = useParams();
@@ -30,8 +24,8 @@ const ProductPage = () => {
   // }
 
   useEffect(() => {
-    window.scrollTo(0,0);
     fetchProductWithId(id);
+
     // fetchData()
     return () => {
       console.log("product:", product);
@@ -41,7 +35,6 @@ const ProductPage = () => {
 
   if (!product.title) return <div>Loading</div>;
   return (
-<<<<<<< HEAD
     <Container style={{ fontFamily: "Shrikhand" }}>
       <ProductImage images={product.images} />
       <Row className="pt-5">
@@ -97,51 +90,6 @@ const ProductPage = () => {
         </Col>
       </Row>
     </Container>
-=======
-    <>
-      <CloudyNav />
-      <Container style={{fontFamily: 'Shrikhand'}}>
-          <ProductImage images={product.images} />
-          <Row className="pt-5">
-              <Col>
-                <h1>{product.title}</h1>
-                <h2>${product.variants[0].price}</h2>
-              </Col>
-          </Row>
-          <Row className="pt-3">
-              <Col><h3>Sizes</h3></Col>
-          </Row>
-          <Row style={{width: "20rem"}}>
-              <Col><Button className="white-button">S</Button></Col>
-              <Col><Button className="white-button">M</Button></Col>
-              <Col><Button className="white-button">L</Button></Col>
-              <Col><Button className="white-button">XL</Button></Col>
-          </Row>
-          <Row className="pt-4">
-              <Col>
-                <h3>Quantity</h3>
-                <InputGroup className="mb-3" style={{width: "105px"}}>
-                  <Button variant="outline-secondary" id="button-addon1">
-                    -
-                  </Button>
-                  <FormControl
-                    aria-label="Example text with button addon"
-                    aria-describedby="basic-addon1"
-                  />
-                  <Button variant="outline-secondary" id="button-addon2">
-                    +
-                  </Button>
-                </InputGroup>
-              </Col>
-          </Row>
-          <Row className="pt-4 text-center">
-              <Col>
-                <Button className="white-button rounded-pill" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>Add to Cart</Button>
-              </Col>
-          </Row>
-      </Container>
-    </>
->>>>>>> 9cb88dd7dce7e06919d5a58617b47c5719d6d44f
   );
 };
 
