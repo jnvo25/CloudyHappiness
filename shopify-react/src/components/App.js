@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ShopProvider from "../context/shopContext";
 import HomePage from "../components/Homepage/Homepage";
 import AllProducts from "../components/AllProducts/AllProducts";
+import AboutUs from "../components/AboutUs/AboutUs";
 import SingleProduct from "../components/SingleProduct/SingleProduct";
 import Navbar from "../components/Navbar/Navbar";
 import Cart from "../components/Cart";
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<AllProducts />} />
             <Route path="/product/:id" element={<SingleProduct />} />
+            <Route path="/aboutus" element={<AboutUs />} />
           </Routes>
         </BrowserRouter>
       </StyletronProvider>
