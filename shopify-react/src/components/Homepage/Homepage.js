@@ -3,7 +3,8 @@ import LearnMore from './LearnMore';
 import PageDirectory from './PageDirectory';
 import MyCarousel from './MyCarousel';
 import Footer from './Footer';
-import CloudyNav from '../Template/CloudyNav';
+import CloudyNav from './CloudyNav';
+import MyCarouselTitle from './MyCarouselTitle';
 
 function Homepage() {
 
@@ -17,6 +18,7 @@ function Homepage() {
         <LearnMore />
         <PageDirectory />
         <p> </p>
+        <MyCarouselTitle />
         <MyCarousel />
         <Footer />
     </div>

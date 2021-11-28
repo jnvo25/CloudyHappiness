@@ -11,20 +11,12 @@ import './Homepage';
 //Figure out what colors/font sizes will work best
 function MyCarousel() {
   return (
-    <div id="mycarouseldiv">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div class="chcTitle">#CLOUDYHAPPINESSCLUB</div>
-      <br></br>
+    <div id="carousel_discord">
       <Carousel variant="dark">
         <Carousel.Item>
           <img
             className="slideImage"
-            src="https://cdn.shopify.com/s/files/1/0601/3599/7661/files/cloudy_happiness_postcards.png?v=1635625280"
+            src="https://cdn.shopify.com/s/files/1/0601/3599/7661/files/cloudy_happiness_table_runner.png?v=1637971932"
             alt="First slide"
           />
         </Carousel.Item>
@@ -32,7 +24,7 @@ function MyCarousel() {
         <Carousel.Item>
           <img
             className="slideImage"
-            src="https://cdn.shopify.com/s/files/1/0601/3599/7661/files/Cloudy_Happiness_Table_Runner_2.png?v=1635625146"
+            src="https://cdn.shopify.com/s/files/1/0601/3599/7661/files/cloudy_happiness_postcards.png?v=1635625280"
             alt="Second slide"
           />
         </Carousel.Item>
@@ -40,13 +32,13 @@ function MyCarousel() {
         <Carousel.Item>
           <img
             className="slideImage"
-            src="https://cdn.shopify.com/s/files/1/0601/3599/7661/files/my_happiness_1.png?v=1635625219"
+            src="https://cdn.shopify.com/s/files/1/0601/3599/7661/files/Cloudy_Happiness_Table_Runner_2.png?v=1635625146"
             alt="Third slide"
           />
         </Carousel.Item>
       </Carousel>
       <br></br>
-      <a id="discordLink" href="https://discord.gg/SRUAk3GZ"> 
+      <a id="discordLink" href="https://discord.gg/PpnrEWhNgm"> 
         <button id="joinClub">Join the club on Discord!</button>
       </a>
       <br></br>
