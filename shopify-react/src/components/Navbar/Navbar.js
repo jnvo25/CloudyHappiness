@@ -20,8 +20,8 @@ const MyNav = () => {
                   setScrollState("#FFFFFF")
               }
           } else {
-              if(scrollState !== "rgba(0, 0, 1, 0)") {
-                  setScrollState("rgba(0, 0, 1, 0)")
+            if(scrollState !== "rgba(0, 0, 1, 0)") {
+                setScrollState("rgba(0, 0, 1, 0)")
               }
           }
       })
@@ -32,7 +32,7 @@ const MyNav = () => {
 
   return (
     <Navbar expanded={expanded} onToggle={(e) => {if(e) setScrollState("#FFFFFF")}} style={{backgroundColor: scrollState}} className="justify-content-around" fixed="top" variant="light" expand="lg">
-      <Navbar.Toggle onClick={()=> {setExpanded(expanded ? false : "expanded")}} aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle onClick={()=> {setExpanded(!expanded)}} aria-controls="basic-navbar-nav" />
       <Link to="/">
         <img className="brand" src={"https://i.ibb.co/B6T1b2n/Cloudy-Happiness-5.png"} alt="Cloudy Happiness" />
       </Link>
@@ -44,11 +44,11 @@ const MyNav = () => {
       </div>
       <Navbar.Collapse id="basic-navbar-nav">
         
-        <Nav.Link><Link onClick={()=> {setExpanded(expanded ? false : "expanded")}} to="/">Home</Link></Nav.Link>
+        <Nav.Link><Link onClick={()=> {setExpanded(!expanded)}} to="/">Home</Link></Nav.Link>
         
-        <Nav.Link><Link onClick={()=> {setExpanded(expanded ? false : "expanded")}} to="/products">Products</Link></Nav.Link>
+        <Nav.Link><Link onClick={()=> {setExpanded(!expanded)}} to="/products">Products</Link></Nav.Link>
 
-        <Nav.Link><Link onClick={()=> {setExpanded(expanded ? false : "expanded")}} to="/aboutus">About Us</Link></Nav.Link>
+        <Nav.Link><Link onClick={()=> {setExpanded(!expanded)}} to="/aboutus">About Us</Link></Nav.Link>
         
         <Nav.Link>Resources</Nav.Link>
       </Navbar.Collapse>
