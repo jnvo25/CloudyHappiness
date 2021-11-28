@@ -5,6 +5,8 @@ import { ShopContext } from "../../context/shopContext";
 import ProductImage from "./ProductImage";
 
 import './SingleProduct.css';
+import CloudyNav from '../Template/CloudyNav';
+
 
 const ProductPage = () => {
   let { id } = useParams();
@@ -17,8 +19,8 @@ const ProductPage = () => {
   // }
 
   useEffect(() => {
+    window.scrollTo(0,0);
     fetchProductWithId(id);
-
     // fetchData()
     return () => {
       // setProduct(null)
@@ -27,6 +29,8 @@ const ProductPage = () => {
 
   if (!product.title) return <div>Loading</div>;
   return (
+    <>
+      <CloudyNav />
       <Container style={{fontFamily: 'Shrikhand'}}>
           <ProductImage images={product.images} />
           <Row className="pt-5">
@@ -67,6 +71,7 @@ const ProductPage = () => {
               </Col>
           </Row>
       </Container>
+    </>
   );
 };
 
