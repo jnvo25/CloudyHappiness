@@ -3,6 +3,7 @@ import { ShopContext } from "../../context/shopContext";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
+import CloudyNav from "../Template/CloudyNav";
 import "./AllProducts.css"
 
 const HomePage = () => {
@@ -17,6 +18,8 @@ const HomePage = () => {
 
   if (!products) return <div>Loading</div>;
   return (
+    <>
+      <CloudyNav />
     <Container className="rounded" id="products">
       <Row>
         {products.map((product) => (
@@ -36,6 +39,7 @@ const HomePage = () => {
         ))}
       </Row>
     </Container>
+    </>
   );
 };
 
