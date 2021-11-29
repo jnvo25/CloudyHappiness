@@ -50,7 +50,7 @@ const ProductPage = () => {
           <Row className="pt-4">
               <Col>
                 <h3>Quantity</h3>
-                <InputGroup className="mb-3" style={{width: "105px"}}>
+                <InputGroup className="mb-3" style={{width: "130px"}}>
                   <Button variant="outline-secondary" id="button-addon1">
                     -
                   </Button>

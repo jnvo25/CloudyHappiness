@@ -5,7 +5,7 @@ import './PageDirectory.css';
 function PageDirectory() {
     return (
         // Place your implementation between these divs
-        <Container fluid id="directory">
+        <Container fluid id="directory" className="mt-5">
             <Row>
                 <Col id="shopNav">
                     <img id='shopCloud' className="clouds" src="https://cdn.discordapp.com/attachments/400879855790718976/913563253853003796/Cloud_Blue.png" />

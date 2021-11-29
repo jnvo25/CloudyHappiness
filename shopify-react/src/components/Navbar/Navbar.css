@@ -17,7 +17,8 @@
     color: black;
 }
 
-a .nav-link {
+.nav-link {
     padding: 0.5rem 0.5rem !important;
-    color: black !important;
+    color: #89a9c3 !important;
+    font-weight: bold;
 }
