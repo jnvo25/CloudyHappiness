@@ -1,4 +1,4 @@
-import './Homepage';
+// import './Homepage';
 import './Footer.css';
 
 function Footer() {
