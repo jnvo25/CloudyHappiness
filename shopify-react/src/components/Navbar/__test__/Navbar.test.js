@@ -1,8 +1,8 @@
 import * as ReactDOM from "react-dom";
-import { ShopContext } from "../../context/shopContext";
+import { ShopContext } from "../../../context/shopContext";
 import { render, fireEvent } from "@testing-library/react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Navbar from './Navbar';
+import Navbar from '../Navbar';
 
 test("renders Navbar links correctly", ()=> {
     const openCart = jest.fn();

@@ -18,10 +18,8 @@ function Homepage() {
             <Intro />
             <LearnMore />
             <PageDirectory />
-            <p> </p>
             <MyCarouselTitle />
             <MyCarousel />
-            <Footer />
         </div>
     );
 }
