@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div id='foot'>
+    <div id='foot' className="mt-5">
       <div id='tags'>
         <a className='foottag' href='/'>Home</a>
         <a className='foottag' href='/products'>Shop</a>
