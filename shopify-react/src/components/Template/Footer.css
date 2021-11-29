@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 #foot{
-    border-top: .2rem solid #89A9C3;
     font-family: 'Shrikhand', cursive;
     color: black;
     padding-top: 19%;
-    background-image: url("https://cdn.discordapp.com/attachments/714892213955592297/913186458981003264/unknown.png");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/cloudy-happiness-webstor-1888d.appspot.com/o/assets%2FFooter%20Clouds%202.png?alt=media&token=8f3518b9-7e47-42af-b737-250f877e40b3");
     background-color: #CAE8FF;
-    background-position-x: -60rem;
-    background-position-y: -15rem;
     font-size: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #tags{
