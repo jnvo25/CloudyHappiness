@@ -31,7 +31,7 @@ function Footer() {
         <a href=''><img className='sociallink' src='https://cdn.discordapp.com/attachments/714892213955592297/913166008833962024/unknown.png' /></a>
       </div>
       <div id='sig'>
-        <h7>CLOUDY HAPPINESS :copyright: 2021</h7>
+        <h7>CLOUDY HAPPINESS © 2021</h7>
         <img id='cornerLogo' src="https://cdn.discordapp.com/attachments/714892213955592297/913169239052001280/unknown.png" />
       </div>
     </div>
