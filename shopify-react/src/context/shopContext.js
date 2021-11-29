@@ -45,7 +45,7 @@ class ShopProvider extends Component {
       this.state.checkout.id,
       lineItemsToAdd
     );
-      
+
     this.setState({ checkout: checkout });
     this.openCart();
   };
@@ -65,6 +65,20 @@ class ShopProvider extends Component {
       lineItemsToUpdate
     );
     this.setState({ checkout: checkout });
+    this.openCart();
+  };
+
+  // delete an array of item from cart based on ID
+  deleteItemToCart = async (id) => {
+    const lineItemToRemove = [id];
+
+    // Update the line item on the checkout (remove item)
+    const checkout = await client.checkout.removeLineItems(
+      this.state.checkout.id,
+      lineItemToRemove
+    );
+    this.setState({ checkout: checkout });
+    this.openCart();
   };
 
   // Fetching All Products
@@ -102,6 +116,7 @@ class ShopProvider extends Component {
           fetchProductWithId: this.fetchProductWithId,
           addItemToCheckout: this.addItemToCheckout,
           updateItemToCart: this.updateItemToCart,
+          deleteItemToCart: this.deleteItemToCart,
           openCart: this.openCart,
           closeCart: this.closeCart,
         }}

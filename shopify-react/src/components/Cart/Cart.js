@@ -4,7 +4,19 @@ import { ShopContext } from "../../context/shopContext";
 import { Container, Row, Col, Offcanvas, Button, Image } from "react-bootstrap";
 import "./Cart.css";
 const NewCart = () => {
-  const { isCartOpen, closeCart, checkout } = useContext(ShopContext);
+  const {
+    isCartOpen,
+    closeCart,
+    checkout,
+    updateItemToCart,
+    deleteItemToCart,
+  } = useContext(ShopContext);
+
+  const onDeleteItem = (deleteID) => {
+    console.log("DeleteID:", deleteID);
+    deleteItemToCart(deleteID);
+  };
+
   if (checkout.lineItems) {
     return (
       <Offcanvas placement={"end"} show={isCartOpen} onHide={closeCart}>
@@ -22,6 +34,7 @@ const NewCart = () => {
                   {checkout.lineItems &&
                     checkout.lineItems.map((item) => (
                       <div key={item.id}>
+                        <button onClick={() => onDeleteItem(item.id)}>X</button>
                         <Col>
                           <Image src={item.variant.image.src} thumbnail />
                         </Col>
