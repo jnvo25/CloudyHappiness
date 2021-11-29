@@ -72,7 +72,7 @@ class ShopProvider extends Component {
     // Fetch all products in your shop
     const products = await client.product.fetchAll();
     this.setState({ products: products });
-    console.log("All Products: ", products);
+    // console.log("All Products: ", products);
   };
 
   // Fetching single product
