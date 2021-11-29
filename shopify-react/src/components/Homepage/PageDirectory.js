@@ -1,4 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 import './PageDirectory.css';
 function PageDirectory() {
     return (
@@ -7,16 +9,20 @@ function PageDirectory() {
             <Row>
                 <Col id="shopNav">
                     <img id='shopCloud' className="clouds" src="https://cdn.discordapp.com/attachments/400879855790718976/913563253853003796/Cloud_Blue.png" />
-                    <button id="shopBtn">
-                        SHOP
-                    </button>
+                    <Link to="/products">
+                        <button id="shopBtn">
+                            SHOP
+                        </button>
+                    </Link>
                 </Col>
 
                 <Col id="faqNav">
                     <img id='faqCloud' className="clouds" src="https://cdn.discordapp.com/attachments/400879855790718976/913563254167593020/Cloudy_Happiness_Green.png" />
-                    <button id="faqBtn">
-                        FAQ
-                    </button>
+                    <Link to="/aboutus">
+                        <button id="faqBtn">
+                            FAQ
+                        </button>
+                    </Link>
                 </Col>
 
                 <Col id="contactNav">
