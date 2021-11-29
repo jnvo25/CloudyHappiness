@@ -11,7 +11,7 @@ function LearnMore() {
                 <Col xs="auto" md="auto">
                     <img id='cloudleft' src="https://cdn.discordapp.com/attachments/714892213955592297/911789138926264320/unknown.png" />
                     <img id='cloudright' src="https://cdn.discordapp.com/attachments/714892213955592297/912084329440616518/unknown.png" />
-                    <Link to="/aboutus">
+                    <Link id='aboutlink' to="/aboutus">
                     <button id="learn">LEARN MORE ABOUT WHY OUR FOUNDER STARTED CLOUDY HAPPINESS<img id='face' className="bottom-right" src="https://cdn.discordapp.com/attachments/714892213955592297/911742690197119016/unknown.png" /></button>
                     </Link>
                 </Col>
