@@ -1,0 +1,131 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+#block{
+    padding-top: 5%;
+}
+
+#holder{
+    background-color: white;
+    border-top-color: #89A9C3;
+    border-bottom-color: #89A9C3;
+    border-top: .2rem solid;
+    border-bottom: .2rem solid;
+    position: relative;
+    overflow: hidden;
+}
+
+#bottomleft{
+    bottom: -7%;
+    left: -5%;
+    position: absolute;
+    width: 20%;
+    height: auto;
+}
+
+#bottomright{
+    bottom: -7%;
+    right: -5%;
+    position: absolute;
+    width: 20%;
+    height: auto;
+}
+
+#topleft{
+    top: -7%;
+    left: -5%;
+    position: absolute;
+    width: 20%;
+    height: auto;
+}
+
+#topright{
+    top: -7%;
+    right: -5%;
+    position: absolute;
+    width: 20%;
+    height: auto;
+}
+
+h2{
+    color: black;
+}
+
+li{
+    list-style-type: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#whoCloudy{
+    display: block;
+    background-color: white;
+    color: #89A9C3;
+    font-size: 1rem;
+    font-family: 'Shrikhand', cursive;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom-color: #89A9C3;
+    border-bottom: .2rem solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#founder{
+    display: block;
+    background-color: white;
+    color: #89A9C3;
+    font-size: 1rem;
+    font-family: 'Shrikhand', cursive;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom-color: #89A9C3;
+    border-bottom: .2rem solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#mission{
+    display: block;
+    background-color: white;
+    color: #89A9C3;
+    font-size: 1rem;
+    font-family: 'Shrikhand', cursive;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom-color: #89A9C3;
+    border-bottom: .2rem solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#vision{
+    display: block;
+    background-color: white;
+    color: #89A9C3;
+    font-size: 1rem;
+    font-family: 'Shrikhand', cursive;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom-color: #89A9C3;
+    border-bottom: .2rem solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#motto{
+    display: block;
+    background-color: white;
+    color: #89A9C3;
+    font-size: 1rem;
+    font-family: 'Shrikhand', cursive;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

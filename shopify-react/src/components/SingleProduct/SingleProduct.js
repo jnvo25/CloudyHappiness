@@ -6,6 +6,8 @@ import ProductImage from "./ProductImage";
 
 import CloudyNav from "../Template/CloudyNav";
 import './SingleProduct.css';
+import CloudyNav from '../Template/CloudyNav';
+
 
 const ProductPage = () => {
   let { id } = useParams();
@@ -18,8 +20,8 @@ const ProductPage = () => {
   // }
 
   useEffect(() => {
+    window.scrollTo(0,0);
     fetchProductWithId(id);
-
     // fetchData()
     return () => {
       // setProduct(null)
