@@ -1,7 +1,16 @@
 import React, { useContext } from "react";
 import { Anchor } from "atomize";
 import { ShopContext } from "../../context/shopContext";
-import { Container, Row, Col, Offcanvas, Button, Image } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Offcanvas,
+  Button,
+  Image,
+  InputGroup,
+  FormControl,
+} from "react-bootstrap";
 import "./Cart.css";
 const NewCart = () => {
   const {
@@ -15,6 +24,16 @@ const NewCart = () => {
   const onDeleteItem = (deleteID) => {
     console.log("DeleteID:", deleteID);
     deleteItemToCart(deleteID);
+  };
+
+  const onSubtractQuantity = (itemID, quantity) => {
+    if (quantity !== 0) {
+      updateItemToCart(itemID, quantity - 1);
+    }
+  };
+
+  const onAddQuantity = (itemID, quantity) => {
+    updateItemToCart(itemID, quantity + 1);
   };
 
   if (checkout.lineItems) {
@@ -34,14 +53,49 @@ const NewCart = () => {
                   {checkout.lineItems &&
                     checkout.lineItems.map((item) => (
                       <div key={item.id}>
-                        <button onClick={() => onDeleteItem(item.id)}>X</button>
+                        <Button
+                          variant="outline-secondary"
+                          id="deleteButton"
+                          onClick={() => onDeleteItem(item.id)}
+                        >
+                          X
+                        </Button>
+
                         <Col>
                           <Image src={item.variant.image.src} thumbnail />
                         </Col>
                         <Col>
                           <p>{item.title}</p>
                           <p>{item.variant.title}</p>
-                          <p>{item.quantity}</p>
+                          <InputGroup
+                            className="mb-3"
+                            style={{ width: "130px" }}
+                          >
+                            <Button
+                              variant="outline-secondary"
+                              id="subQuantity"
+                              onClick={() =>
+                                onSubtractQuantity(item.id, item.quantity)
+                              }
+                            >
+                              -
+                            </Button>
+                            <FormControl
+                              aria-label="Example text with button addon"
+                              aria-describedby="basic-addon1"
+                              type="number"
+                              value={item.quantity}
+                            />
+                            <Button
+                              variant="outline-secondary"
+                              id="addQuantity"
+                              onClick={() =>
+                                onAddQuantity(item.id, item.quantity)
+                              }
+                            >
+                              +
+                            </Button>
+                          </InputGroup>
                         </Col>
                         <Col>
                           <p>{item.variant.price}</p>
