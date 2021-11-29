@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { ShopContext } from "../../context/shopContext";
 import ProductImage from "./ProductImage";
 
+import CloudyNav from "../Template/CloudyNav";
 import './SingleProduct.css';
 import CloudyNav from '../Template/CloudyNav';
 

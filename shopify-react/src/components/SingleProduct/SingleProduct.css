@@ -8,3 +8,9 @@ body {
     background-color: white !important;
     color: #89A9C3 !important;
 }
+
+#product-image:hover {
+    border-color: #013963;
+    box-shadow: 0 0.5rem 0.5rem -.04rem #7e8388;
+    transform: translateY(-0.25rem)
+}

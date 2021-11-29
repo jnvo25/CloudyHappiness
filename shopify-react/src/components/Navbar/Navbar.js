@@ -52,8 +52,6 @@ const MyNav = () => {
         
         <Nav.Link>Resources</Nav.Link>
       </Navbar.Collapse>
-      
-      
     </Navbar>
   )
 }
