@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Intro from './Intro'
 import LearnMore from './LearnMore';
 import PageDirectory from './PageDirectory';
 import MyCarousel from './MyCarousel';
@@ -7,20 +8,22 @@ import MyCarouselTitle from './MyCarouselTitle';
 
 function Homepage() {
 
-  useEffect(() => {
-    window.scrollTo(0,0);
-  })
-  
-  return (
-    <div>
-        <CloudyNav />
-        <LearnMore />
-        <PageDirectory />
-        <p> </p>
-        <MyCarouselTitle />
-        <MyCarousel />
-    </div>
-  );
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
+
+    return (
+        <div>
+            <CloudyNav />
+            <Intro />
+            <LearnMore />
+            <PageDirectory />
+            <p> </p>
+            <MyCarouselTitle />
+            <MyCarousel />
+            <Footer />
+        </div>
+    );
 }
 
 export default Homepage;

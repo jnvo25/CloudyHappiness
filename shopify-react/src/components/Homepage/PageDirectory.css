@@ -28,6 +28,9 @@
 
     background-color: #cae8ff;
     border: none;
+
+    font-size: 2vw;
+    color: black;
 }
 
 #shopBtn:hover{
@@ -67,6 +70,9 @@
 
     background-color: #d6e9b9;
     border: none;
+
+    font-size: 2vw;
+    color: black;
 }
 
 #faqBtn:hover{
@@ -106,6 +112,9 @@
 
     background-color: #f8c9dc;
     border: none;
+
+    font-size: 2vw;
+    color: black;
 }
 
 #contactBtn:hover{

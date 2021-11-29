@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+#intro{
+    font-family: 'Shrikhand', cursive;
+    background-image: url("https://media.discordapp.net/attachments/400879855790718976/914680684461826108/backgroundClouds.png?width=1186&height=676");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 0%;
+    margin: 0%;
+
+    position: relative;
+}
+
+#padding{
+    padding-top: 5%;
+}
+
+#introImage{
+    width: 100%;
+}
+
+#introText{
+    font-family: 'Shrikhand', cursive;
+    position: absolute;
+    right: 5%;
+    left: 60%;
+    bottom: 30%;
+    color: #89a9c3;
+    font-size: 2vw;
+}
+
+#joinBtn{
+    position: absolute;
+    right: 5%;
+    left: 65%;
+    bottom: 15%;
+
+    border: none;
+    background-color: #cae8ff;
+    width: 20%;
+    height: 10%;
+
+    color: #89a9c3;
+    font-size: 2vw;
+}
+
+#joinBtn:hover{
+    box-shadow: 0 0.6rem 0.6rem -.04rem #89a9c3;
+    transform: translateY(-.3rem);
+    transition: 0.25s;
+}
+#btnArrow{
+    padding-left: 5%;
+    width: 30%;
+}
