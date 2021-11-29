@@ -39,16 +39,16 @@ const MyNav = () => {
       <div style={{display: "flex", width: "50px", justifyContent: "flex-end"}}>
         {/* <Nav.Link class="nav-icons ms-auto"><i class="fas fa-user"></i></Nav.Link> */}
         <Anchor onClick={() => openCart()}>
-          <Nav.Link class="nav-icons ms-auto"><i class="fas fa-shopping-cart"></i></Nav.Link>
+          <p data-testid="shopping-cart" className="nav-icons ms-auto"><i className="fas fa-shopping-cart"></i></p>
         </Anchor>
       </div>
       <Navbar.Collapse id="basic-navbar-nav">
         
-        <Nav.Link><Link onClick={()=> {setExpanded(expanded ? false : "expanded")}} to="/">Home</Link></Nav.Link>
+        <Nav.Link as={Link} to="/" onClick={()=> {setExpanded(expanded ? false : "expanded")}}>Home</Nav.Link>
         
-        <Nav.Link><Link onClick={()=> {setExpanded(expanded ? false : "expanded")}} to="/products">Products</Link></Nav.Link>
+        <Nav.Link as={Link} to="/products" onClick={()=> {setExpanded(expanded ? false : "expanded")}}>Products</Nav.Link>
 
-        <Nav.Link><Link onClick={()=> {setExpanded(expanded ? false : "expanded")}} to="/aboutus">About Us</Link></Nav.Link>
+        <Nav.Link as={Link} to="/aboutus" onClick={()=> {setExpanded(expanded ? false : "expanded")}}>About Us</Nav.Link>
         
         <Nav.Link>Resources</Nav.Link>
       </Navbar.Collapse>
