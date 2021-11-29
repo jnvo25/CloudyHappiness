@@ -9,7 +9,8 @@ import AllProducts from "../components/AllProducts/AllProducts";
 import AboutUs from "../components/AboutUs/AboutUs";
 import SingleProduct from "../components/SingleProduct/SingleProduct";
 import Navbar from "../components/Navbar/Navbar";
-import Cart from "../components/Cart";
+import Cart from "../components/Cart/Cart";
+import Footer from "../components/Template/Footer";
 
 const debug =
   process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
@@ -29,6 +30,7 @@ function App() {
             <Route path="/product/:id" element={<SingleProduct />} />
             <Route path="/aboutus" element={<AboutUs />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </StyletronProvider>
     </ShopProvider>

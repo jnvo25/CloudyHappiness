@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
 import { Anchor } from "atomize";
-import {ShopContext} from '../context/shopContext';
+import {ShopContext} from '../../context/shopContext';
 import { Container, Row, Col, Offcanvas, Button, Image } from 'react-bootstrap';
 import './Cart.css';
 const NewCart = () => {
 
     const { isCartOpen, closeCart, checkout } = useContext(ShopContext)
-
     if (checkout.lineItems) {
         return (
             <Offcanvas placement={'end'} show={isCartOpen} onHide={closeCart}>

@@ -4,7 +4,6 @@ import {useState} from "react";
 const ProductImage = (props) => {
     const [currentImage, setCurrentImage] = useState(0);
 
-    console.log(props);
     return (
         <Row>
             <Col>
