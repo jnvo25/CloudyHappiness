@@ -15,10 +15,10 @@ function AboutUs() {
       <CloudyNav />
       <p id='block'></p>
       <div id='holder'>
-        <img id="bottomleft" src="https://cdn.discordapp.com/attachments/714892213955592297/914661638530007080/unknown.png" />
-        <img id="bottomright" src="https://cdn.discordapp.com/attachments/714892213955592297/914662473901174784/unknown.png" />
-        <img id="topleft" src="https://cdn.discordapp.com/attachments/714892213955592297/914662842244952114/unknown.png" />
-        <img id="topright" src="https://cdn.discordapp.com/attachments/714892213955592297/914663231446990869/unknown.png" />
+        <img id="bottomleft" src="https://firebasestorage.googleapis.com/v0/b/cloudy-happiness-webstor-1888d.appspot.com/o/assets%2Fbottom-left.png?alt=media&token=15369ab6-14f1-4897-bad9-b638caf6f643" />
+        <img id="bottomright" src="https://firebasestorage.googleapis.com/v0/b/cloudy-happiness-webstor-1888d.appspot.com/o/assets%2Fbottom-right.png?alt=media&token=90212869-0302-47b8-ae8b-4dbcc8f6275f" />
+        <img id="topleft" src="https://firebasestorage.googleapis.com/v0/b/cloudy-happiness-webstor-1888d.appspot.com/o/assets%2Ftop-left.png?alt=media&token=ad946da5-0c8d-41a6-8b82-98703e9d8c40" />
+        <img id="topright" src="https://firebasestorage.googleapis.com/v0/b/cloudy-happiness-webstor-1888d.appspot.com/o/assets%2Ftop-right.png?alt=media&token=381bb3fe-b9f5-4c82-bff6-1fc33a8e538f" />
         <div id="whoCloudy">
           <h2>Who Is Cloudy Happiness</h2>
           <ul>
