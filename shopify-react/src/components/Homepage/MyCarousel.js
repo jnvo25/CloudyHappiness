@@ -30,7 +30,7 @@ function MyCarousel() {
                 <Carousel.Item>
                     <img
                         className="slideImage"
-                        src="https://cdn.shopify.com/s/files/1/0601/3599/7661/files/Cloudy_Happiness_Table_Runner_2.png?v=1635625146"
+                        src="https://firebasestorage.googleapis.com/v0/b/cloudy-happiness-webstor-1888d.appspot.com/o/assets%2Fcloudy%20happiness%20postcard%20tablerunner.png?alt=media&token=2340b0fe-bc50-44a4-9502-7dd45d6f9750"
                         alt="Third slide"
                     />
                 </Carousel.Item>
