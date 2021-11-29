@@ -2,8 +2,6 @@ import React, { useContext, useEffect } from "react";
 import { ShopContext } from "../../context/shopContext";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import CloudyNav from '../Template/CloudyNav';
-
 import CloudyNav from "../Template/CloudyNav";
 import "./AllProducts.css"
 

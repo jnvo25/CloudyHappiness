@@ -6,8 +6,6 @@ import ProductImage from "./ProductImage";
 
 import CloudyNav from "../Template/CloudyNav";
 import './SingleProduct.css';
-import CloudyNav from '../Template/CloudyNav';
-
 
 const ProductPage = () => {
   let { id } = useParams();
