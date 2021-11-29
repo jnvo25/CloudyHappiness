@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { useState } from "react";
 
 const ProductImage = (props) => {
@@ -24,7 +24,7 @@ const ProductImage = (props) => {
                   style={{
                     width: "100%",
                     border:
-                      currentImage == index
+                      currentImage === index
                         ? "5px solid rgba(0, 0, 0, 0.3)"
                         : "",
                   }}
@@ -37,7 +37,11 @@ const ProductImage = (props) => {
         </Row>
       </Col>
       <Col xs={9}>
-        <img style={{ width: "100%" }} src={props.images[currentImage].src} />
+        <img
+          style={{ width: "100%" }}
+          src={props.images[currentImage].src}
+          alt={props.images[currentImage].altText}
+        />
       </Col>
     </Row>
   );

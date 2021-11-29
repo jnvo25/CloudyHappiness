@@ -19,7 +19,7 @@ const ProductPage = () => {
   const { fetchProductWithId, addItemToCheckout, product } =
     useContext(ShopContext);
   const [quantity, setQuantity] = useState(0);
-  const [size, setSize] = useState(0);
+  const [size, setSize] = useState(-1);
   // const [product, setProduct] = useState(null)
   // async function fetchData() {
   //     const fetchedProduct = await fetchProductWithId(id)
@@ -45,6 +45,20 @@ const ProductPage = () => {
     } else if (sizeClicked === "XL") {
       setSize(3);
     }
+  };
+
+  const onAddItem = () => {
+    if (size === -1) {
+      alert("Please select a size");
+      return;
+    }
+    if (quantity === 0) {
+      alert("Please declare quantity more than 0");
+      return;
+    }
+    addItemToCheckout(product.variants[size].id, quantity);
+    setQuantity(0);
+    setSize(-1);
   };
 
   useEffect(() => {
@@ -124,12 +138,7 @@ const ProductPage = () => {
         </Row>
         <Row className="pt-4 text-center">
           <Col>
-            <Button
-              className="white-button rounded-pill"
-              onClick={() =>
-                addItemToCheckout(product.variants[size].id, quantity)
-              }
-            >
+            <Button className="white-button rounded-pill" onClick={onAddItem}>
               Add to Cart
             </Button>
           </Col>
