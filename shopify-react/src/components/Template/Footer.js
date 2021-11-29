@@ -23,9 +23,9 @@ function Footer() {
       </div>
       <div id='socials'>
         <h6 id='company'>CLOUDY HAPPINESS</h6>
-        <a href=''><img className='sociallink' src='https://cdn.discordapp.com/attachments/714892213955592297/913165612820353055/unknown.png' /></a>
-        <a href=''><img className='sociallink' src='https://cdn.discordapp.com/attachments/714892213955592297/913165727958192158/unknown.png' /></a>
-        <a href=''><img className='sociallink' src='https://cdn.discordapp.com/attachments/714892213955592297/913166008833962024/unknown.png' /></a>
+        <a href='https://www.instagram.com/cloudyhappiness.co/'><img className='sociallink' src='https://cdn.discordapp.com/attachments/714892213955592297/913165612820353055/unknown.png' /></a>
+        <a href='https://www.facebook.com/cloudyhappinessco-110710387870861/'><img className='sociallink' src='https://cdn.discordapp.com/attachments/714892213955592297/913165727958192158/unknown.png' /></a>
+        <a href='https://www.tiktok.com/@cloudyhappiness.co?'><img className='sociallink' src='https://cdn.discordapp.com/attachments/714892213955592297/913166008833962024/unknown.png' /></a>
       </div>
       <div id='sig'>
         <h6>CLOUDY HAPPINESS :copyright: 2021</h6>
