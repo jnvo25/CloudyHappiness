@@ -1,5 +1,3 @@
-import Button from "@restart/ui/esm/Button";
-import { Container, Row, Col } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
 import './MyCarousel.css';
 

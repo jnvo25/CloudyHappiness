@@ -1,5 +1,4 @@
-import Button from "@restart/ui/esm/Button";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import './LearnMore.css';
 
 function LearnMore() {
