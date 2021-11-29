@@ -27,7 +27,7 @@ const NewCart = () => {
   };
 
   const onSubtractQuantity = (itemID, quantity) => {
-    if (quantity !== 0) {
+    if (quantity !== 1) {
       updateItemToCart(itemID, quantity - 1);
     }
   };
