@@ -20,6 +20,11 @@ const ProductPage = () => {
     useContext(ShopContext);
   const [quantity, setQuantity] = useState(0);
   const [size, setSize] = useState(-1);
+
+  const [selectedS, setSelectedS] = useState(false);
+  const [selectedM, setSelectedM] = useState(false);
+  const [selectedL, setSelectedL] = useState(false);
+  const [selectedXL, setSelectedXL] = useState(false);
   // const [product, setProduct] = useState(null)
   // async function fetchData() {
   //     const fetchedProduct = await fetchProductWithId(id)
@@ -36,14 +41,31 @@ const ProductPage = () => {
   };
   const onSetSize = (e) => {
     let sizeClicked = e.target.innerHTML;
+
     if (sizeClicked === "S") {
       setSize(0);
+      setSelectedS(true);
+      setSelectedM(false);
+      setSelectedL(false);
+      setSelectedXL(false);
     } else if (sizeClicked === "M") {
       setSize(1);
+      setSelectedS(false);
+      setSelectedM(true);
+      setSelectedL(false);
+      setSelectedXL(false);
     } else if (sizeClicked === "L") {
       setSize(2);
+      setSelectedS(false);
+      setSelectedM(false);
+      setSelectedL(true);
+      setSelectedXL(false);
     } else if (sizeClicked === "XL") {
       setSize(3);
+      setSelectedS(false);
+      setSelectedM(false);
+      setSelectedL(false);
+      setSelectedXL(true);
     }
   };
 
@@ -64,6 +86,10 @@ const ProductPage = () => {
 
     setQuantity(0);
     setSize(-1);
+    setSelectedS(false);
+    setSelectedM(false);
+    setSelectedL(false);
+    setSelectedXL(false);
   };
 
   useEffect(() => {
@@ -96,24 +122,48 @@ const ProductPage = () => {
             </Row>
             <Row style={{ width: "20rem" }}>
               <Col>
-                <Button className="white-button" onClick={onSetSize}>
-                  S
-                </Button>
+                {selectedS ? (
+                  <Button className="selected-button" onClick={onSetSize}>
+                    S
+                  </Button>
+                ) : (
+                  <Button className="white-button" onClick={onSetSize}>
+                    S
+                  </Button>
+                )}
               </Col>
               <Col>
-                <Button className="white-button" onClick={onSetSize}>
-                  M
-                </Button>
+                {selectedM ? (
+                  <Button className="selected-button" onClick={onSetSize}>
+                    M
+                  </Button>
+                ) : (
+                  <Button className="white-button" onClick={onSetSize}>
+                    M
+                  </Button>
+                )}
               </Col>
               <Col>
-                <Button className="white-button" onClick={onSetSize}>
-                  L
-                </Button>
+                {selectedL ? (
+                  <Button className="selected-button" onClick={onSetSize}>
+                    L
+                  </Button>
+                ) : (
+                  <Button className="white-button" onClick={onSetSize}>
+                    L
+                  </Button>
+                )}
               </Col>
               <Col>
-                <Button className="white-button" onClick={onSetSize}>
-                  XL
-                </Button>
+                {selectedXL ? (
+                  <Button className="selected-button" onClick={onSetSize}>
+                    XL
+                  </Button>
+                ) : (
+                  <Button className="white-button" onClick={onSetSize}>
+                    XL
+                  </Button>
+                )}
               </Col>
             </Row>
           </>
