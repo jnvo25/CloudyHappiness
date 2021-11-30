@@ -48,7 +48,7 @@ const ProductPage = () => {
   };
 
   const onAddItem = () => {
-    if (size === -1) {
+    if (product.variants.length > 1 && size === -1) {
       alert("Please select a size");
       return;
     }
@@ -56,7 +56,12 @@ const ProductPage = () => {
       alert("Please declare quantity more than 0");
       return;
     }
-    addItemToCheckout(product.variants[size].id, quantity);
+    if (product.variants.length > 1) {
+      addItemToCheckout(product.variants[size].id, quantity);
+    } else {
+      addItemToCheckout(product.variants[0].id, quantity);
+    }
+
     setQuantity(0);
     setSize(-1);
   };
@@ -82,33 +87,38 @@ const ProductPage = () => {
             <h2>${product.variants[0].price}</h2>
           </Col>
         </Row>
-        <Row className="pt-3">
-          <Col>
-            <h3>Sizes</h3>
-          </Col>
-        </Row>
-        <Row style={{ width: "20rem" }}>
-          <Col>
-            <Button className="white-button" onClick={onSetSize}>
-              S
-            </Button>
-          </Col>
-          <Col>
-            <Button className="white-button" onClick={onSetSize}>
-              M
-            </Button>
-          </Col>
-          <Col>
-            <Button className="white-button" onClick={onSetSize}>
-              L
-            </Button>
-          </Col>
-          <Col>
-            <Button className="white-button" onClick={onSetSize}>
-              XL
-            </Button>
-          </Col>
-        </Row>
+        {product.variants.length > 1 && (
+          <>
+            <Row className="pt-3">
+              <Col>
+                <h3>Sizes</h3>
+              </Col>
+            </Row>
+            <Row style={{ width: "20rem" }}>
+              <Col>
+                <Button className="white-button" onClick={onSetSize}>
+                  S
+                </Button>
+              </Col>
+              <Col>
+                <Button className="white-button" onClick={onSetSize}>
+                  M
+                </Button>
+              </Col>
+              <Col>
+                <Button className="white-button" onClick={onSetSize}>
+                  L
+                </Button>
+              </Col>
+              <Col>
+                <Button className="white-button" onClick={onSetSize}>
+                  XL
+                </Button>
+              </Col>
+            </Row>
+          </>
+        )}
+
         <Row className="pt-4">
           <Col>
             <h3>Quantity</h3>
